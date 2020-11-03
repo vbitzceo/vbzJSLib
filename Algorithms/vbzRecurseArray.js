@@ -1,5 +1,5 @@
 /*
- * Recursive function to process an array
+ * Recursive function to process an array in javascript
  */ 
 function processArray (arr, startIdx, dir="f") {
     if (startIdx >= 0 && arr[startIdx] != undefined)
