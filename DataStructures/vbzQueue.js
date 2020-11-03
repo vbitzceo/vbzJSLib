@@ -1,3 +1,7 @@
+/*
+ * Implementation of a Queue data structure using 
+ * ES6 features.
+ */
 class vbzQueue {
     constructor() {
         this.collection = [];

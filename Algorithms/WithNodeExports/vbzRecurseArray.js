@@ -1,7 +1,7 @@
-/*
- * Recursive function to process an array
+ /*
+ * Recursive function to process an array in javascript
  */ 
-function processArray (arr, startIdx, dir="f") {
+ function processArray (arr, startIdx, dir="f") {
     if (startIdx >= 0 && arr[startIdx] != undefined)
     {
         console.log(arr[startIdx]);
@@ -17,6 +17,8 @@ function processArray (arr, startIdx, dir="f") {
         return;
 }
 
-x = [1,2,3,4,5];
+// Export for Node.JS
+exports.processArray = function (arr, startIdx, dir="f") {
+    processArray (arr, startIdx, dir);
+}
 
-processArray(x, 0, "f");

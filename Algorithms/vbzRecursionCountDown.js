@@ -1,4 +1,6 @@
-//Basic recursion
+/* 
+ * Basic recursion in Javascript to implement a countdown.
+ */
 function countdown(n) {
     console.log(n);
 
@@ -9,4 +11,4 @@ function countdown(n) {
 }
 
 
-countdown(10);
+countdown(10); // Countdown from 10

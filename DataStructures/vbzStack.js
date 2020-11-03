@@ -1,3 +1,7 @@
+/*
+ * Implementation of a Stack data structure using 
+ * ES6 features.
+ */
 class vbzStack {
     constructor() {
         this.count = 0;

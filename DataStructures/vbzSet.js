@@ -1,3 +1,7 @@
+/*
+ * Implementation of a Set data structure using 
+ * ES6 features.
+ */
 class vbzSet {
     constructor() {
         this.collection = [];
