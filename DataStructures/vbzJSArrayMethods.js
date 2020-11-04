@@ -21,3 +21,7 @@ console.log(arr);
 
 console.log("Calling arr.slice(-1): returns a new arry containing the last element of the original array: (does not modify the original array)" + arr.slice(-1));
 console.log(arr);
+
+arr.forEach((element, index) => {
+    console.log('arr[' + index + '] = ' + element);
+});
