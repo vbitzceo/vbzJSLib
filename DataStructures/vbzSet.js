@@ -54,7 +54,7 @@ class vbzSet {
     // Returns a new set that is the union of this
     // set and the passed in set
     union(otherSet) {
-        let retVal = new pySet();
+        let retVal = new vbzSet();
         this.collection.forEach(value => retVal.add(value));
         otherSet.values().forEach(value => retVal.add(value));
 
@@ -63,7 +63,7 @@ class vbzSet {
 
     // Returns the elements common to both sets
     intersection(otherSet) {
-        let retVal = new pySet();
+        let retVal = new vbzSet();
         for(let i = 0; i < this.collection.length; i++) {
             if (otherSet.has(this.collection[i]))
                 retVal.add(this.collection[i])
@@ -74,7 +74,7 @@ class vbzSet {
     // Returns the elements that this set has  
     // which do not exist in the passed set
     difference(otherSet) {
-        let retVal = new pySet();
+        let retVal = new vbzSet();
         for(let i = 0; i < this.collection.length; i++) {
             if (!otherSet.has(this.collection[i]))
                 retVal.add(this.collection[i])
@@ -88,3 +88,7 @@ class vbzSet {
         return this.values().every(value => otherSet.has(value));
     }
 }
+
+let a = new vbzSet();
+a.addFromArray([1,2,3,4,5]);
+console.log(a.showValues());
