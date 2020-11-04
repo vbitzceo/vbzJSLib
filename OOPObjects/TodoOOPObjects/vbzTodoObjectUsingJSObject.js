@@ -33,4 +33,4 @@ console.log(anotherTodo);
 // Create a new one using spread syntax
 yetAnotherTodo = {...todo};
 yetAnotherTodo.Text = "Yet another todo"
-console.log(yetAnotherTodo);    
+console.log(yetAnotherTodo);
