@@ -2,10 +2,6 @@
 
 This library/collection of Javascript items is to proved others and myself with examples, and handy utilities in one spot. Sort of a reference.
 
-## Features or Example
-
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
-
 ## Motivation
 
 Needed a place to archive handy utilities and examples in JS
