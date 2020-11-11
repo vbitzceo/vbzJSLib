@@ -39,6 +39,13 @@ onlyShowLastChars = function(str, removeChar = null) {
     return spliceString + str.substr(str.length - lastChars);
 }
 
+capitalizeFirstLetter = function (string) {
+    if(typeof string == undefined) return;
+    var firstLetter = string[0] || string.charAt(0);
+    return firstLetter ? firstLetter.toUpperCase() + string.substring(1).toLowerCase() : '';
+}
+
+
 console.log(onlyShowLastChars('234-56-3422', "-"));
 
 console.log(onlyShowLastChars('1234'));
@@ -49,3 +56,5 @@ console.log(onlyShowLastChars('12345678'));
 console.log(onlyShowLastChars('123456789'));
 console.log(onlyShowLastChars('1234567890'));
 console.log(onlyShowLastChars('12345678901'));
+
+console.log(capitalizeFirstLetter('chris'));
