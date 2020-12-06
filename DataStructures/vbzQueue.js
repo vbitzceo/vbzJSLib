@@ -12,7 +12,7 @@ class vbzQueue {
         this.collection.push(element);
     }
 
-    // Pops the next item in the queue
+    //takes off the first item in the queue
     dequeue() {
         return this.collection.shift();
     }
